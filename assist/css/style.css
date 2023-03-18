@@ -54,7 +54,7 @@ nav .items a{
 }
 .hero .containt .insid-img{
     position: absolute;
-    top: 45%;
+    top: 50%;
     right: 40%;
     font-size: 36px;
     color: white;
@@ -88,7 +88,7 @@ nav .items a{
 
 }
 .projects .projects-container .card  {
-    max-width: 50%;
+    max-width: 40%;
     position: relative;
     margin-bottom: 50px;
     
@@ -145,7 +145,9 @@ nav .items a{
 
 .employees-container .card  {
     position: static;
-    width: 40%;
+    max-width: 40%;
+   
+    
     
 }
 .employees .employees-container .card img{
@@ -195,8 +197,9 @@ nav .items a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100px;
+    height: 50px;
     width: 100%;
+    font-size: large;
  }
 footer .power {
 font-weight: bold;
@@ -207,45 +210,68 @@ footer .power span {
     color: yellow;
     
 }
-footer .media {
-    font-weight: bold;
+@media( min-width:1440px){
+    .hero{ 
+        height: 740px;
+    }
+    .projects h1, .about h1 , .contact h1, .employees h1{
+        
+        font-size: 40px;
+    }
+    .about p{
+        font-size: 25px;
+    }
+    .employees .employees-container .card p{
+       font-size: 25px;
+    }
 }
-
-footer .media a{
-    color: rgb(216, 253, 5);
-    text-decoration: none;
-    padding: 10px 10px;
-    
-
-}
-    
+ 
 @media( max-width:768px){
     .hero{ 
-        height: 440px;
+        height: 540px;
     }
     
     
     .hero .containt .insid-img{ 
-        top: 40%;
+        top: 45%;
+        right: 35%;
     }
 
     .projects .projects-container {
-       gap: 10px;
+       gap: 20px;
      }
-
+     .projects .projects-container .card{
+       max-width:40% ;
+    }
+    .employees-container .card{
+     position: static;
+     max-width: 40%;
+    }
+    footer{
+        
+        font-size: medium;
+    }
 }
+
 @media( max-width:620px){
     .hero{
         height: 260px;
     }
  
     .hero .containt .insid-img{
-        top: 45%;
+        top: 55%;
         right: 35%;
         font-size: 25px; 
     }
+    .projects .projects-container .card p {
+       
+        width: 90px;
+        font-size: 15px;
+        height: 35px;
+
+    }
 }
-@media( max-width:425px){
+@media( max-width:500px){
     nav .items{
         display: flex;
         gap: 30px;
@@ -256,42 +282,70 @@ footer .media a{
     }
     
     .hero .containt .insid-img{
-        top: 60%;
+        top: 45%;
+        right: 35%;
         font-size: 20px; 
+    }
+    .projects .projects-container .card{
+       max-width:90% ;
     }
     .projects .projects-container .card p {
        
         width: 100px;
         font-size: 20px;
-        opacity: 70%;
 
     }
     footer{
         padding-left: 10px;
      }
+     .employees-container .card  {
+    position: static;
+    max-width: 90%;
+    }
 }
 @media( max-width:375px){
     nav .items{
         display: flex;
         gap: 10px;
     }
+     nav .items{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-right: 10px;
+    }
     .hero{
         height: 200px;
     }
     
     .hero .containt .insid-img{
-        top: 40%;
-        right: 30%;
-        font-size: 15px; 
+        top: 50%;
+        right: 40%;
+        font-size: 12px; 
+    }
+}
+@media( max-width:350px){
+    nav{
+        flex-wrap: wrap;
+        font-size: 15px;
+    }
+   
+     nav .items{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .hero{
+        height: 200px;
     }
     
-}
-@media( max-width:320px){
- 
-    footer{
-        padding-left: 10px;
-        font-size: 20px;
-     }
+    .hero .containt .insid-img{
+        top: 50%;
+        right: 40%;
+        font-size: 12px; 
+    }
 }
 
 
